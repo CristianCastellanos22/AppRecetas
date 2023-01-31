@@ -1,7 +1,7 @@
 package com.cristian.apprecetas.di
 
 import com.cristian.apprecetas.data.RecipesRepositoryImpl
-import com.cristian.apprecetas.data.network.RecipesRepository
+import com.cristian.apprecetas.data.RecipesRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

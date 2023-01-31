@@ -1,7 +1,6 @@
-package com.cristian.apprecetas.data.network
+package com.cristian.apprecetas.data
 
 import com.cristian.apprecetas.data.network.response.ApiResponseStatus
-import com.cristian.apprecetas.data.network.response.RecipesResponse
 import com.cristian.apprecetas.domain.model.RecipesUI
 import kotlinx.coroutines.flow.Flow
 

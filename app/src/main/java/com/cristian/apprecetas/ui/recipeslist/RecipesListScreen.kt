@@ -5,7 +5,6 @@ import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.*
@@ -20,8 +19,8 @@ import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.cristian.apprecetas.data.network.response.ApiResponseStatus
 import com.cristian.apprecetas.domain.model.RecipesUI
-import com.cristian.apprecetas.ui.ErrorDialog
-import com.cristian.apprecetas.ui.LoadingWheel
+import com.cristian.apprecetas.ui.composables.ErrorDialog
+import com.cristian.apprecetas.ui.composables.LoadingWheel
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable

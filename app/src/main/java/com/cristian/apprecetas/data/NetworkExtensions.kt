@@ -1,4 +1,4 @@
-package com.cristian.apprecetas.utils
+package com.cristian.apprecetas.data
 
 import retrofit2.Response
 

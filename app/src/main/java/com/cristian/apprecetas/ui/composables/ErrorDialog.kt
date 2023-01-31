@@ -1,4 +1,4 @@
-package com.cristian.apprecetas.ui
+package com.cristian.apprecetas.ui.composables
 
 import androidx.compose.material.AlertDialog
 import androidx.compose.material.Button
