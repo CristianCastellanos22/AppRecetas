@@ -2,4 +2,7 @@
     <string name="app_name">AppRecetas</string>
     <string name="error_dialog_title">Oops, something happened!</string>
     <string name="try_again">Try again</string>
+    <string name="title_activity_recipes_details">RecipesDetailsActivity</string>
+    <string name="ingredient">Ingredientes:</string>
+    <string name="instructions">Instrucciones</string>
 </resources>

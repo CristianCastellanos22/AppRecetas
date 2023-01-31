@@ -1,6 +1,5 @@
 package com.cristian.apprecetas.ui.recipeslist
 
-import android.widget.Toast
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -13,48 +12,46 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.cristian.apprecetas.data.network.response.ApiResponseStatus
 import com.cristian.apprecetas.domain.model.RecipesUI
+import com.cristian.apprecetas.ui.Routes.*
 import com.cristian.apprecetas.ui.composables.ErrorDialog
 import com.cristian.apprecetas.ui.composables.LoadingWheel
+import com.cristian.apprecetas.ui.theme.Purple500
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun RecipesListScreen(recipesViewModel: RecipesViewModel) {
+fun RecipesListScreen(recipesViewModel: RecipesViewModel, onRecipeClicked: (RecipesUI) -> Unit) {
 
     val status = recipesViewModel.status.value
     val recipes = recipesViewModel.recipesList.value.groupBy { it.strTags }
-    val context = LocalContext.current
 
-    LazyColumn(
-        verticalArrangement = Arrangement.spacedBy(8.dp),
-        modifier = Modifier.padding(8.dp)
+    Scaffold(
+        topBar = { RecipesListScreenTopBar() }
     ) {
-        recipes.forEach { (strTags, recipesUI) ->
-            stickyHeader {
-                Text(
-                    text = strTags,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .background(Color.LightGray),
-                    fontSize = 16.sp
-                )
-            }
-            items(recipesUI) {
-                RecipeItems(recipesUI = it) {
-                    Toast.makeText(
-                        context,
-                        it.nameMeal,
-                        Toast.LENGTH_SHORT
-                    ).show()
+        LazyColumn(
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+            modifier = Modifier.padding(8.dp).fillMaxSize()
+        ) {
+            recipes.forEach { (strTags, recipesUI) ->
+                stickyHeader {
+                    Text(
+                        text = strTags,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .background(Color.Transparent),
+                        fontSize = 16.sp
+                    )
                 }
+                items(recipesUI) {
+                    RecipeItems(recipesUI = it, onRecipeClicked = onRecipeClicked)
+                }
+
+
             }
-
-
         }
     }
 
@@ -100,4 +97,13 @@ fun RecipeItems(recipesUI: RecipesUI, onRecipeClicked: (RecipesUI) -> Unit) {
             }
         }
     }
+}
+
+@Composable
+fun RecipesListScreenTopBar() {
+    TopAppBar(
+        title = { Text(text = "Recipes List") },
+        backgroundColor = Purple500,
+        contentColor = Color.White,
+    )
 }
