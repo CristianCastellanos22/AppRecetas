@@ -24,6 +24,7 @@ import dagger.hilt.android.AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     private val recipesViewModel: RecipesViewModel by viewModels()
+    private var recipe: RecipesUI? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,8 +57,5 @@ class MainActivity : ComponentActivity() {
         startActivity(intent)
     }
 
-    private fun onNavigationIconClick() {
-        finish()
-    }
 }
 

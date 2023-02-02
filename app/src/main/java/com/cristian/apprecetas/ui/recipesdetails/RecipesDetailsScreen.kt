@@ -1,18 +1,19 @@
 package com.cristian.apprecetas.ui.recipesdetails
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.sharp.ArrowBack
 import androidx.compose.material.icons.sharp.Place
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -20,6 +21,7 @@ import androidx.navigation.NavHostController
 import coil.compose.AsyncImage
 import com.cristian.apprecetas.R
 import com.cristian.apprecetas.domain.model.RecipesUI
+import com.cristian.apprecetas.ui.Routes.Screen1
 import com.cristian.apprecetas.ui.Routes.Screen3
 
 @Composable
@@ -34,9 +36,12 @@ fun RecipesDetailsScreen(recipesUI: RecipesUI, navigationController: NavHostCont
         ) {
             MyDivider()
             AsyncImage(modifier = Modifier
-                .fillMaxWidth().padding(start = 8.dp, end = 8.dp),
+                .fillMaxWidth()
+                .padding(start = 8.dp, end = 8.dp),
                 model = recipesUI.strMealThumb,
-                contentDescription = "")
+                contentDescription = "", placeholder = painterResource(id = R.drawable.loading_img),
+                error = painterResource(id = R.drawable.ic_broken_image)
+            )
             MyDivider()
             Text(text = "País de origen:",
                 modifier = Modifier.padding(start = 8.dp))
