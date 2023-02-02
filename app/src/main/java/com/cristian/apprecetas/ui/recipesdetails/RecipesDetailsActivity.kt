@@ -1,7 +1,6 @@
 package com.cristian.apprecetas.ui.recipesdetails
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,8 +13,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.cristian.apprecetas.domain.model.RecipesUI
-import com.cristian.apprecetas.ui.Routes
-import com.cristian.apprecetas.ui.Routes.*
+import com.cristian.apprecetas.ui.Routes.Screen2
+import com.cristian.apprecetas.ui.Routes.Screen3
 import com.cristian.apprecetas.ui.theme.AppRecetasTheme
 
 class RecipesDetailsActivity : ComponentActivity() {

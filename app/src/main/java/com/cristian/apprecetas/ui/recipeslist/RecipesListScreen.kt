@@ -28,7 +28,6 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavHostController
 import coil.compose.AsyncImage
 import com.cristian.apprecetas.R
 import com.cristian.apprecetas.data.network.response.ApiResponseStatus
@@ -76,7 +75,8 @@ fun RecipesListScreen(
             )
         }
     ) {
-        ShowRecipes(recipes = recipes,
+        ShowRecipes(
+            recipes = recipes,
             onRecipeClicked = onRecipeClicked,
             recipesViewModel = recipesViewModel,
         )
