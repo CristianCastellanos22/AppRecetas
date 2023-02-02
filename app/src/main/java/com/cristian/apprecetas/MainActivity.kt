@@ -24,7 +24,6 @@ import dagger.hilt.android.AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     private val recipesViewModel: RecipesViewModel by viewModels()
-    private var recipe: RecipesUI? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

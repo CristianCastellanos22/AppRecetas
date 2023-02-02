@@ -28,6 +28,7 @@ class RecipesViewModel @Inject constructor(private val recipesUseCase: RecipesUs
         _searchWidgetState.value = newValue
         if (newValue == SearchWidgetState.CLOSED) {
             recipesList.value = recipesListReserved
+            _searchTextState.value = ""
         }
     }
 

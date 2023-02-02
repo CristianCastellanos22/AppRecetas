@@ -77,7 +77,8 @@ fun RecipesListScreen(
         }
     ) {
         ShowRecipes(recipes = recipes,
-            onRecipeClicked = onRecipeClicked
+            onRecipeClicked = onRecipeClicked,
+            recipesViewModel = recipesViewModel,
         )
     }
 
@@ -95,6 +96,7 @@ fun RecipesListScreen(
 fun ShowRecipes(
     recipes: Map<String, List<RecipesUI>>,
     onRecipeClicked: (RecipesUI) -> Unit,
+    recipesViewModel: RecipesViewModel,
 ) {
     LazyColumn(
         verticalArrangement = Arrangement.spacedBy(8.dp),
@@ -116,6 +118,7 @@ fun ShowRecipes(
                 RecipeItems(
                     recipesUI = it,
                     onRecipeClicked = onRecipeClicked,
+                    recipesViewModel = recipesViewModel,
                 )
             }
 
@@ -128,11 +131,15 @@ fun ShowRecipes(
 fun RecipeItems(
     recipesUI: RecipesUI,
     onRecipeClicked: (RecipesUI) -> Unit,
+    recipesViewModel: RecipesViewModel,
 ) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .clickable { onRecipeClicked(recipesUI) },
+            .clickable {
+                recipesViewModel.updateSearchWidgetState(newValue = SearchWidgetState.CLOSED)
+                onRecipeClicked(recipesUI)
+            },
         elevation = 15.dp,
     ) {
         Row(
