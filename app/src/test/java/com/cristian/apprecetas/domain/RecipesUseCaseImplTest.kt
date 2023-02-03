@@ -2,7 +2,6 @@ package com.cristian.apprecetas.domain
 
 import com.cristian.apprecetas.data.RecipesRepository
 import com.cristian.apprecetas.data.network.response.ApiResponseStatus
-import com.cristian.apprecetas.data.network.response.RecipesResponse
 import com.cristian.apprecetas.domain.model.RecipesUI
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
@@ -12,10 +11,10 @@ import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.test.TestCoroutineDispatcher
 import kotlinx.coroutines.test.setMain
-import org.junit.Before
-import org.junit.Test
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotEquals
+import org.junit.Before
+import org.junit.Test
 
 class RecipesUseCaseImplTest {
     @MockK
