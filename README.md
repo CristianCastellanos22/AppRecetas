@@ -117,7 +117,7 @@ Los test se realizaron sobre el emulador virtual Pixel XL API 30
 
 ![Emulator Screen Shot][emulator-screenshot]
 
-Los test automatizados de UI se encuentran en el directorio automatizadas
+Los test automatizados se encuentran en el directorio automatizadas
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
