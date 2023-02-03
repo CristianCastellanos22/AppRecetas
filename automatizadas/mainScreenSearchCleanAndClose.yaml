@@ -1,0 +1,26 @@
+appId: com.cristian.apprecetas
+---
+- tapOn: "AppRecetas"
+- tapOn: "Search"
+- tapOn:
+    point: "50%,7%"
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/label"
+    index: 10
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/label"
+    index: 6
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/label"
+    index: 6
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/label"
+    index: 11
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/label"
+    index: 22
+- tapOn:
+    id: "com.google.android.inputmethod.latin:id/icon"
+    index: 5
+- tapOn: "Close Icon"
+- tapOn: "Close Icon"

@@ -1,0 +1,28 @@
+appId: com.cristian.apprecetas
+---
+- "clearState"
+- tapOn: "AppRecetas"
+- waitForAnimationToEnd
+- swipe:
+    direction: "UP"
+    duration: 3000
+- swipe:
+    direction: "DOWN"
+- tapOn:
+    point: "50%,27%"
+- swipe:
+    direction: "UP"
+- swipe:
+    direction: "UP"
+- swipe:
+    direction: "UP"
+- swipe:
+    direction: "DOWN"
+- tapOn:
+    point: "62%,61%"
+- tapOn: "Zoom in"
+- tapOn: "Zoom out"
+- tapOn:
+    id: "com.android.systemui:id/back"
+- tapOn:
+    id: "com.android.systemui:id/white_cutout"
