@@ -106,7 +106,7 @@ EL framework cuenta con una interfaz gráfica, la cual podremos utilizar para es
 
 * [Maestro Studio](https://maestro.mobile.dev/getting-started/maestro-studio)
 
-Para ejecutar los test debemos navegar hasta el directorio automatizadas, donde se encuentren los archivos .yaml y ejecutar el comando.
+Para ejecutar los test debemos navegar hasta el directorio automatizadas, donde se encuentran los archivos .yaml y ejecutar el comando.
 
 ```sh
    maestro test nombreArchivo.yaml
