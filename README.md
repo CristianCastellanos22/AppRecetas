@@ -49,7 +49,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Acerca del proyecto
 
-[![Product Name Screen Shot][product-screenshot]]
+![Product Name Screen Shot][product-screenshot]
 
 La app
 
@@ -120,7 +120,7 @@ Para ejecutar los test debemos navegar hasta el directorio donde se encuentren l
 Los test se realizaron sobre el emulador virtual Pixel XL API 30
 * Para ejecutar los test se debe agregar la aplicacion a la pantalla del dispositivo o abrir el menu de aplicaciones, para que el script pueda encontrar el package del apk
 
-[![Emulator Screen Shot][emulator-screenshot]]
+![Emulator Screen Shot][emulator-screenshot]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
