@@ -10,7 +10,7 @@ import javax.inject.Inject
 
 class RecipesRepositoryImpl @Inject constructor(
     private val recipesServices: RecipesClient,
-    private val dispatcher: CoroutineDispatcher
+    private val dispatcher: CoroutineDispatcher,
 ) : RecipesRepository {
     override suspend fun getRecipes(): Flow<ApiResponseStatus<List<RecipesUI>>> {
         return flow<ApiResponseStatus<List<RecipesUI>>> {
@@ -19,7 +19,7 @@ class RecipesRepositoryImpl @Inject constructor(
         }.onStart {
             emit(ApiResponseStatus.Loading())
         }.catch {
-            emit(ApiResponseStatus.Error(it.message ?: "Error"))
+            emit(ApiResponseStatus.Error("Error en consulta \nSugerencias: \n - Verifique su conexión a internet. \n - Intente más tarde."))
         }.flowOn(dispatcher)
     }
 

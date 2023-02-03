@@ -82,12 +82,16 @@ fun RecipesListScreen(
         )
     }
 
-    if (status is ApiResponseStatus.Loading) {
-        LoadingWheel()
-    } else if (status is ApiResponseStatus.Error) {
-        ErrorDialog(status.messageId) { recipesViewModel.resetApiResponseStatus() }
-    } else if (recipes.isEmpty()) {
-        Toast.makeText(context, "No se encontraron resultados", Toast.LENGTH_SHORT).show()
+    when {
+        status is ApiResponseStatus.Loading -> {
+            LoadingWheel()
+        }
+        status is ApiResponseStatus.Error -> {
+            ErrorDialog(status.messageId) { recipesViewModel.resetApiResponseStatus() }
+        }
+        recipes.isEmpty() -> {
+            Toast.makeText(context, "No se encontraron resultados", Toast.LENGTH_SHORT).show()
+        }
     }
 }
 
