@@ -47,7 +47,7 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
-## Acerca del projecto
+## Acerca del proyecto
 
 [![Product Name Screen Shot][product-screenshot]]
 
@@ -117,6 +117,11 @@ Para ejecutar los test debemos navegar hasta el directorio donde se encuentren l
    maestro test nombreArchivo.yaml
    ```
 
+Los test se realizaron sobre el emulador virtual Pixel XL API 30
+* Para ejecutar los test se debe agregar la aplicacion a la pantalla del dispositivo o abrir el menu de aplicaciones, para que el script pueda encontrar el package del apk
+
+[![Emulator Screen Shot][emulator-screenshot]]
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
@@ -131,3 +136,4 @@ Project Link: [https://github.com/CristianCastellanos22/ProyectoMercadoLibreTest
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/cristianjcb/
 [product-screenshot]: images/Screenshot_App1.png
+[emulator-screenshot]: images/Screenshot_emulator.png
