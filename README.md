@@ -91,7 +91,7 @@ Pasos para la ejecución del proyecto.
 
 ### Automatizadas
 
-Para las pruebas automatizadas de UI se utiliza el framework Maestro
+Para las pruebas automatizadas se utiliza el framework Maestro
 
 * [Maestro](https://maestro.mobile.dev/)
 
