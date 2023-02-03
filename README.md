@@ -119,13 +119,6 @@ Los test se realizaron sobre el emulador virtual Pixel XL API 30
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- CONTACT -->
-## Contacto
-
-Project Link: [https://github.com/CristianCastellanos22/ProyectoMercadoLibreTest.git](https://github.com/CristianCastellanos22/ProyectoMercadoLibreTest.git)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
