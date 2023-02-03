@@ -106,18 +106,18 @@ EL framework cuenta con una interfaz gráfica, la cual podremos utilizar para es
 
 * [Maestro Studio](https://maestro.mobile.dev/getting-started/maestro-studio)
 
-Para ejecutar los test debemos navegar hasta el directorio donde se encuentren los archivos .yaml y ejecutar el comando
+Para ejecutar los test debemos navegar hasta el directorio automatizadas, donde se encuentren los archivos .yaml y ejecutar el comando.
 
 ```sh
    maestro test nombreArchivo.yaml
    ```
 
+![Terminal Screen Shot][terminal-screenshot]
+
 Los test se realizaron sobre el emulador virtual Pixel XL API 30
 * Para ejecutar los test se debe agregar la aplicacion a la pantalla del dispositivo o abrir el menu de aplicaciones, para que el script pueda encontrar el package del apk
 
 ![Emulator Screen Shot][emulator-screenshot]
-
-Los test automatizados se encuentran en el directorio automatizadas
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -134,3 +134,4 @@ Project Link: [https://github.com/CristianCastellanos22/ProyectoMercadoLibreTest
 [linkedin-url]: https://www.linkedin.com/in/cristianjcb/
 [product-screenshot]: images/Screenshot_App1.png
 [emulator-screenshot]: images/Screenshot_emulator.png
+[terminal-screenshot]: images/Screenshot_terminal.png
