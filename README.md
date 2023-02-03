@@ -37,7 +37,6 @@
     <li>
       <a href="#automatizadas">Pruebas Automatizadas</a>
     </li>
-    <li><a href="#contact">Contacto</a></li>
   </ol>
 </details>
 
