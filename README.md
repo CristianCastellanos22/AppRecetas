@@ -9,7 +9,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Proyecto App Recetas</h3>
+<h3 align="center">Proyecto App Recetas</h3>
 
   <p align="center">
     App que muestra un listado de recetas de comida
@@ -51,7 +51,7 @@
 
 [![Product Name Screen Shot][product-screenshot]]
 
-La app 
+La app
 
 La APP cuenta con tres pantallas.
 * Listado y busqueda, por nombre e ingredientes.
@@ -109,9 +109,9 @@ Se debe instalar el CLI
 
 EL framework cuenta con una interfaz gráfica, la cual podremos utilizar para escribir los archivo .yaml de los test
 
-* [Instalar CLI](https://maestro.mobile.dev/getting-started/maestro-studio)
+* [Maestro Studio](https://maestro.mobile.dev/getting-started/maestro-studio)
 
-Para ejecutar los test debemos navegar hasta el directorio donde se encuentren los archivos y ejecutar el comando 
+Para ejecutar los test debemos navegar hasta el directorio donde se encuentren los archivos .yaml y ejecutar el comando
 
 ```sh
    maestro test nombreArchivo.yaml
